@@ -67,7 +67,7 @@ export function loginUser(req, res) {
 							image: user.image,
 							isEmailVerified: user.isEmailVerified,
 						},
-						"i-computers-54!"
+						process.env.JWT_SECRET
 					);
 
 					console.log(token);
