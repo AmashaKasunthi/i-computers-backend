@@ -58,6 +58,7 @@ export function loginUser(req, res) {
 				);
 
 				if (isPasswordValid) {
+					//checck if attempts are more than 3 times and we don't send token
 					const token = jwt.sign(
 						{
 							email: user.email,

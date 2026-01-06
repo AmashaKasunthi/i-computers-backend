@@ -29,8 +29,8 @@ app.use(express.json())
 
 app.use(authorizeUser)
 
-app.use("/users", userRouter)
-app.use("/products",productRouter)
+app.use("/api/users", userRouter)
+app.use("/api/products",productRouter)
 
 function start(){
     console.log("Server started on port 3000")
