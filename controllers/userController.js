@@ -48,7 +48,7 @@ export function loginUser(req, res) {
 	})
 		.then((user) => {
 			if (user == null) {
-				res.json({
+				res.status(404).json({
 					message: "User with given email not found",
 				});
 			} else {
